@@ -6,6 +6,8 @@ Code will create VPC, 1 EC2 instance (t2.micro) and Security Group with opened S
 <br>
 Change variables in variables.tf file: Region, AMI, and "Allowed\_SSH\_IP"
 
- terraform init
- terraform plan
- terraform apply
+terraform init
+
+terraform plan
+
+terraform apply
