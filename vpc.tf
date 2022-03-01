@@ -2,10 +2,10 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "3.11.5"
 
-  name = "vpc_db"
+  name = "my_vpc"
   cidr = "10.0.0.0/16"
 
-  azs             = ["us-west-2a"]
+  azs             = [var.azs]
   private_subnets = ["10.0.11.0/24"]
   public_subnets  = ["10.0.12.0/24"]
 
@@ -13,7 +13,7 @@ module "vpc" {
 
 
   tags = {
-    Name        = "VPC for WP and RDB"
+    Name        = "My_VPC"
     Description = "VPC"
   }
 }

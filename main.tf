@@ -22,7 +22,7 @@ resource "aws_instance" "Server" {
   }
 
   depends_on = [
-    module.vpc.vpc_db
+    module.vpc.my_vpc
   ]
 
 }

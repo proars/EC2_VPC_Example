@@ -25,7 +25,7 @@ resource "aws_security_group" "EC2_security" {
     Name = "EC2_security Group"
   }
 
-  depends_on = [module.vpc.vpc_db]
+  depends_on = [module.vpc.my_vpc]
 }
 
 
